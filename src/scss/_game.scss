@@ -1,0 +1,343 @@
+.dashboard {
+  position: absolute;
+  bottom:-35%;
+  left: 10%;
+  width: 40%;
+  height: 70%;
+  background-color: #000;
+  border-radius: 100px;
+  &__speedometer{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 35%;
+    padding-bottom: 35%;
+    background-color: #555;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    border: 1px solid white;
+  }
+  &__indicator {
+    position: absolute;
+    left:50%;
+    top: 5%;
+    width: 5px;
+    height: 45%;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    transform-origin: 0 100%;
+    z-index: 1;
+  }
+  &__text {
+    position: absolute;
+    font-size: 1rem;
+    color:white;
+    &--tach {
+      font-size: 1.3rem;
+    }
+  }
+  &__line {
+    position: absolute;
+    width: 3px;
+    height: 15%;
+    background-color: #fff;
+  }
+  &__tachometer{
+    position: absolute;
+    left: 42.5%;
+    top: 5%;
+    width: 35%;
+    padding-bottom: 35%;
+    background-color: #555;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+  }
+  &__info {
+    position: absolute;
+    left: 50%;
+    top: 32.5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.7rem;
+  }
+  &__speed-info-container {
+    position: absolute;
+    right: 5%;
+    top: 7.5%;
+    width: 10%;
+    height: 12.5%;
+    background-color: #555;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__speed-result {
+    font-size: 2rem;
+  }
+  &__speed-unit {
+    font-size: 0.8rem;
+  }
+  &__gear-info-container {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+    right: 5%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__gear-result {
+    font-size: 2rem;
+  }
+  &__nickname {
+    position: absolute;
+    left: 100%;
+    top:30%;
+    transform: translateY(-125%);
+    padding: 5px 20px;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__nickname-text {
+    color:white;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+}
+
+.game-over {
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  &__button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+  }
+  &__text {
+    width: 75%;
+    height: 100%;
+    font-size: 1.8rem;
+    color: white;
+    margin: 15% auto 0 auto;
+    text-align: center;
+  }
+}
+
+.counter-container {
+  position: absolute;
+  right: 2.5%;
+  bottom: 0;
+  height: 30%;
+  width: 12.5%;
+  border-radius: 30px 30px 0 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__counter {
+    width: 70%;
+    height: 40%;
+    background-color: #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+  }
+  &__header {
+    color:white;
+    font-size: 1.8rem;
+    margin: 12.5% 0 12.5% 0;
+  }
+}
+
+.car {
+  position: absolute;
+  top:45%;
+  left:0%;  
+  width: 200px;
+  &__image {
+    width: 100%;
+    height: 100%;
+    transform: scale(-1,1);
+  }
+  &__wheel {
+    position: absolute;
+    height: 53%;
+    width: 53%;
+    bottom: 4%;
+    left: -8.5%;
+    &--front {
+      left: 52%;
+    }
+  }
+}
+
+.game-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background.jpg');
+  position: absolute;
+  background-size: cover;
+  background-position: 0 90%;
+  overflow: hidden;
+}
+
+.finish-game{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  width: 25%;
+  &__text {
+    color:White;
+    text-align: center;
+    margin-right: 2.5%;
+  }
+  &__button {
+    width: 40%;
+    padding: 0 2.5%;
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    &:hover {
+      background-color: rgba(0,0,0,1);
+    }
+  }
+}
+
+.initial-menu {
+  position: absolute;
+  left: 50%;
+  top:25%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 30px;
+  &__config{
+    position: absolute;
+    top: 7.5%;
+    right: 5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  &__header {
+    color: black;
+    padding: 5% 0;
+    text-shadow: 0 0 5px greenyellow;
+    font-size: 3rem;
+  }
+  &__input {
+    width: 50%;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    &::placeholder {
+      font-weight: bold;
+    }
+
+  }
+  &__link {
+    width: 35%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5px 0;
+    background-color: black;
+    box-shadow: 0 0 10px 0 greenyellow;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    &:hover {
+      box-shadow: 0 0 20px 0 greenyellow;
+    }
+  }
+  &__instruction {
+    top:0;
+    left: 100%;
+    position: absolute;
+    width: 50%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    padding: 2.5%;
+  }
+  &__instruction-header {
+    color:white;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  &__instruction-rule {
+    display: flex;
+    padding: 5% 0;
+    color:white;
+    justify-content: center;
+  }
+  &__instruction-key {
+    margin-right: 10%;
+  }
+}
+
+.starting-lights {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2.5px;
+  background-color: black;
+align-items: center;
+  z-index: 1;
+  &__light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5% 0;
+    box-shadow: 0 0 5px 0px red; 
+    &--green {
+      background-color: greenyellow;
+      opacity: 0;
+      box-shadow: 0 0 20px 5px greenyellow;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
