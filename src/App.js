@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router basename="{process.env.PUBLIC_URL}">
-      <Route path='/' exact component={InitialMenu} />
-      <Route path='/game' component={DragRace} />
+    <Router>
+      <Route path='/Project1' exact component={InitialMenu} />
+      <Route path='/Project1/game' component={DragRace} />
     </Router>
   );
 }

@@ -18,7 +18,7 @@ const InitialMenu = () => {
         <h1 className="initial-menu__header">Drag Race</h1>
         <input type="text" className="initial-menu__input" placeholder='Enter your nickname' value={name} onChange={handleInput} />
         <Link className="initial-menu__link" to={{
-          pathname: '/game',
+          pathname: '/Project1/game',
           state: {
             name: name,
           }
