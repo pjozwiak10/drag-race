@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Project1/static/css/main.908a3450.chunk.css",
+    "main.js": "/Project1/static/js/main.6066aeb1.chunk.js",
+    "main.js.map": "/Project1/static/js/main.6066aeb1.chunk.js.map",
+    "runtime-main.js": "/Project1/static/js/runtime-main.b8cb2387.js",
+    "runtime-main.js.map": "/Project1/static/js/runtime-main.b8cb2387.js.map",
+    "static/js/2.2dec7508.chunk.js": "/Project1/static/js/2.2dec7508.chunk.js",
+    "static/js/2.2dec7508.chunk.js.map": "/Project1/static/js/2.2dec7508.chunk.js.map",
+    "index.html": "/Project1/index.html",
+    "precache-manifest.59eb9421370fb452f0dcfdd71fc30e73.js": "/Project1/precache-manifest.59eb9421370fb452f0dcfdd71fc30e73.js",
+    "service-worker.js": "/Project1/service-worker.js",
+    "static/css/main.908a3450.chunk.css.map": "/Project1/static/css/main.908a3450.chunk.css.map",
+    "static/js/2.2dec7508.chunk.js.LICENSE": "/Project1/static/js/2.2dec7508.chunk.js.LICENSE",
+    "static/media/App.scss": "/Project1/static/media/background.f8b8d20a.jpg",
+    "static/media/racing.svg": "/Project1/static/media/racing.fbcd9296.svg",
+    "static/media/wheel.svg": "/Project1/static/media/wheel.d176bd3a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8cb2387.js",
+    "static/js/2.2dec7508.chunk.js",
+    "static/css/main.908a3450.chunk.css",
+    "static/js/main.6066aeb1.chunk.js"
+  ]
+}
