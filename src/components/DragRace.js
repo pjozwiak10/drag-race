@@ -229,7 +229,7 @@ const DragRace = (props) => {
         setTachRatioMinus(speedRatioPlus * ratioPlus * ratioMinus)
       }
 
-      if (finish) {
+      if (finish || gear === 'N') {
         if (speedResult <= 2) {
           setSpeedResult(0)
           setSpeedIndicator(-135)
