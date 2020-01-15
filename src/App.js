@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-      <Route path='/Project1' exact component={InitialMenu} />
-      <Route path='/Project1/game' component={DragRace} />
+      <Route path='/drag-race' exact component={InitialMenu} />
+      <Route path='/drag-race/game' component={DragRace} />
     </Router>
   );
 }
